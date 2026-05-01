@@ -1,0 +1,87 @@
+/* 서브 탭 */
+.sub-tab ul { /* 태그명씀 */
+    display: flex;
+    overflow: hidden;
+    
+}
+.sub-tab a {
+   font-size: 17px;
+   font-weight: 700;
+   color: #003675;
+}
+.sub-tab ul li {
+    padding: 10px 30px;
+    width: 50%;
+    border-bottom: 5px solid #E4E7EB;
+    text-align: center;
+    
+}
+
+.sub-tab .on {
+    border-bottom: 5px solid #003675;
+    color: #003675;
+    
+}
+
+/*국내 일경험 list*/
+.domestic-list {
+    text-align: center;
+    
+    
+}
+
+.domestic-list a {
+    
+    font-size: 26px;
+    color: #111;
+    
+}
+.domestic-list li {
+    display: flex;
+    width: 245px;
+    height: 76px;
+    font-size: 16px;
+    border: 1px solid#D0D5DD;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+    margin-top: 30px;
+}
+
+/*해외 일경험 list*/
+.global-list dl {
+    padding: 32px;
+    border: 1px solid#D0D5DD;
+    border-radius: 10px;
+
+}
+
+.global-list .tag {
+    padding: 10px;
+    background-color: #003675;
+    color: #fff;
+    border-radius: 10px;
+    
+}
+.global-list dt {
+    margin-top: 20px;
+    font-size: 19px;
+}
+
+.global-list dd {
+    font-size: 17px;
+    margin: 8px 0 24px;
+    overflow: hidden;
+    /* display: -webkit-box; */
+    -webkit-moz-box-orient: vertical;
+    -webkit-line-clamp: 2; 
+
+    
+
+}
+.global-list dd p{
+    font-size: 15px;
+    color: #555;
+    
+}

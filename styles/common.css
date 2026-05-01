@@ -8,7 +8,7 @@
 
 /* Reset style */ /* 기본값 초기화 - 여기서만 태그 선택자 허용 */
 * { box-sizing: border-box; }
-body, h1, h2, h3, h4, p, ul, ol, li, button, a { margin: 0; padding: 0; }
+body, h1, h2, h3, h4, p, ul, ol, li, button, a, dl, dd, fieldset { margin: 0; padding: 0; }
 h1, h2, h3, h4 { font-size: inherit; }
 ul, ol { list-style: none; }
 a { text-decoration: none; color: inherit; }
@@ -54,6 +54,7 @@ h1 {
     font-weight: 700;
     line-height: 1.2;
     color: #111;
+    margin-bottom: 48px;
 }
 h2 {
     font-size: 25px;
@@ -67,6 +68,7 @@ h3 {
     line-height: 1.4;
     color: #111;
 }
+
 a { color:#1D56BC; line-height: 1.4; font-size: 15px; }
 .txt-link { color:#1d1d1d; }
 a:hover { color:#1D56BC; text-decoration: underline; }
@@ -81,7 +83,13 @@ input {
     color: #333;
 }
 
-button {
+/* 아이콘/이미지 사이즈 */
+img {width: 100%; height: 100%; object-fit: cover; align-items: center;}
+.icon-f {width: 20px; height: 20px;}
+
+
+/* 메인버튼 / 서브버튼 / 온 오프 버튼 따로 넣어야 할 듯 */
+button { 
     padding: 10px 20px;
     border-radius: 4px;
     font-size: 16px;
@@ -92,12 +100,10 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3;
+    
 }
 
 /* 폰트 */
-
-
 .txt-caption {
     font-size: 14px;
     font-weight: 400;
@@ -106,6 +112,7 @@ button:hover {
 }
 
 /* 3. 레이아웃 클래스 (공통 사용) */
+#main { padding: 0 15px; }
 .wrapper { width: 100%; min-width: 320px; }
 .container { width: 100%; }
 .inner { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 20px; background-color: #ececec; }
@@ -137,53 +144,91 @@ button:hover {
     }
 }
 
-/* 서브 탭 */
+/* 메인 탭 */
 .main-tab {}
-.sub-tab {}        
-.sub-tab-btn {}
 
-/* 꿀팁 (각 페이지 상단 정보) */
+/* 서브 탭 - 지혜 */
+.sub-tab {}        
+.sub-tab .prev {}
+.sub-tab .next {}
+
+/* 꿀팁 (각 페이지 상단 정보) - 지혜 */
 .cont-info {}
 
-/* 페이지 번호 영역 */
-.page-num-box {}
+/* 서브페이지 맨 위 네비 - 윤진 */
+.sub-nav {
+    display: flex;
+    gap: 10px;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.sub-nav a {
+    text-decoration: underline; /*글자 아래 밑줄*/
+    text-underline-offset: 5px; /* 글자와 밑줄 사이의 간격 */
+    color: #1D1D1D;
+}
+a:hover{
+    text-decoration: none;
+}
+.sub-nav li:last-child {
+    font-weight: bold;
+}
 
-/* 페이지 번호 */
-.page-num {}
+/* 버튼 - 윤진 */
+    /* 메인버튼 */
+    .main-btn {
+        width: 124px;
+        height: 40px;
+        padding: 8px 16px;
+        background-color: #246BE0;
+        color: #fff;
+    }
+    .main-btn:hover {
+        text-decoration: underline;
+        color: #fff;
+    }
+    .main-btn a { color: #fff; }
+    /* 서브버튼 */
+    .sub-btn {
+        width: 100px;
+        height: 40px;
+        padding: 0px 8px;
+        background-color: #EFF5FF;
+        color: #246BE0;
+        border: 1px solid #246BE0;
+    }
 
-/* 이전 다음 */
-.page-prev {}
-.page-next {}
+    .sub-btn:hover {
+        text-decoration: underline;
+        color: #246BE0;
+    }
+/* -- */
 
-/* 맨앞 맨뒤 */
-.page-first {}
-.page-last {}
+/* 페이지 번호 - 다슬 */
+    .page-num-box {}
 
-/* 폼영역 */
-.sub-search-area {}
+    /* 페이지 번호 온오프 */
+    .page-num-box .num {}
+    .page-num-box .num.on {}
 
-.sub-search-category {}
-.sub-search-keyword {}
-.sub-search-input {}
+    /* 이전 다음 */
+    .page-num-box .prev {}
+    .page-num-box .next {}
 
-.sub-search-date-start {}
-.sub-search-date-end {}
+    /* 맨앞 맨뒤 */
+    .page-num-box .first {}
+    .page-num-box .last {}
+/* -- */
 
-.search-submit {}
-.search-reset {}
+/* 폼영역 - 지수 */
+.sub-search-area{}
 
-/* 앨범 목록 */
-.albam-list {}
-.albam-item {}
+.sub-search-area .keyword {}
+.sub-search-area .input {}
 
-.albam-img-mask {}
-.albam-img-mask img {}
+.sub-search-area .submit {}
+.sub-search-area .reset {}
 
-.albam-cont {}
-
-.albam-top {}
-.albam-top-cate {}
-.albam-top-share {}
-.albam-info {}
-.albam-tit {}
-.albam-meta {}
+/* 앨범 목록 - 지혜 */
+.albam-list {/* 그리드 갭 넣으셈 */}
+.albam-list .item {/* 이벤트 빼고 생각하셈 */}

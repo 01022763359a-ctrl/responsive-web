@@ -2,40 +2,36 @@
 .sub-tab ul { /* 태그명씀 */
     display: flex;
     overflow: hidden;
-    
 }
+
 .sub-tab a {
    font-size: 17px;
    font-weight: 700;
    color: #003675;
 }
+
 .sub-tab ul li {
     padding: 10px 30px;
     width: 50%;
     border-bottom: 5px solid #E4E7EB;
     text-align: center;
-    
 }
 
 .sub-tab .on {
     border-bottom: 5px solid #003675;
     color: #003675;
-    
 }
 
 /*국내 일경험 list*/
 .domestic-list {
     text-align: center;
-    
-    
 }
 
 .domestic-list a {
-    
     font-size: 26px;
     color: #111;
-    
 }
+
 .domestic-list li {
     display: flex;
     width: 245px;
@@ -54,7 +50,7 @@
     padding: 32px;
     border: 1px solid#D0D5DD;
     border-radius: 10px;
-
+    margin-top: 20px;
 }
 
 .global-list .tag {
@@ -76,12 +72,37 @@
     /* display: -webkit-box; */
     -webkit-moz-box-orient: vertical;
     -webkit-line-clamp: 2; 
-
-    
-
 }
+
 .global-list dd p{
     font-size: 15px;
     color: #555;
     
+}
+/*해외 일경험 add*/
+h3 {
+    margin: 20px 0;
+}
+.global-list-add li {
+    padding: 15px;
+    border: 1px solid#D0D5DD;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.global-list-add span{
+    display: block;
+    font-size: 17px;
+}
+
+.global-list-add strong{
+    color: #111;
+    font-size: 19px
+}
+.global-list-add p{
+    color: #111;
+    margin: 24px 0;
+    font-size: 17px;
+}
+.global-list-add img{
+
 }

@@ -68,12 +68,15 @@
 .global-list dd {
     font-size: 17px;
     margin: 8px 0 24px;
-    overflow: hidden;
-    /* display: -webkit-box; */
-    -webkit-moz-box-orient: vertical;
-    -webkit-line-clamp: 2; 
+    overflow: hidden;   /* 지정된 줄 수를 넘는 텍스트 숨김 */
+    line-clamp: 2;      /* (표준) 최대 2줄까지만 표시, 초과 내용은 잘림 + 말줄임 처리 */
+    display: -webkit-box;    /* 웹킷 기반 브라우저용 레이아웃 방식 */
+    -webkit-box-orient: vertical;   /* 박스 방향을 세로로 설정 */
+    -webkit-line-clamp: 2;   /* 웹킷 방식 줄 제한 */
 }
-
+.global-list .btn{
+    text-align: right;
+}
 .global-list dd p{
     font-size: 15px;
     color: #555;

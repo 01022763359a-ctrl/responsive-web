@@ -1,7 +1,13 @@
+/*모바일 ~ 테블릿*/
+@media (min-width:360px){
+    /*cont*/
 
-/*cont*/
+.cont-area {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
 .cont{
-    background-color: #E1EBFF;
+    background-color: #EFF5FF;
     border-radius: 10px;
     margin-bottom: 10px;
     border: 1px solid#D0D5DD;
@@ -25,5 +31,57 @@
     font-size: 17px;
     text-align: center;
     margin-bottom: 24px;
+}
+
+}
+
+/*테블릿 ~ PC*/
+@media (min-width:650px){
+.cont-info {
+    padding: 40px 36px 40px 140px;
+    background-color: #F0F0F0;
+    margin-bottom: 64px;
+    border-radius: 10px;
+    font-size: 17px;
+}
+
+.cont-info dt{
+    margin-bottom: 12px;
+    font-size: 19px;
+    
+}
+
+.cont-area {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 15px;
+}
+.cont{
+    background-color: #EFF5FF;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border: 1px solid#D0D5DD;
+    text-align: center;
+}
+
+.cont-icon { /*아이콘 여백*/
+   
+    height: 250px;
+    background-color: #fff;
+}
+.cont dl{
+    padding: 0 20px;
+}
+.cont dt{
+    font-size: 19px;
+    text-align: center;
+    margin: 24px;
+}
+.cont dd{
+    font-size: 17px;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
 }
 

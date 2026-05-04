@@ -155,7 +155,7 @@ button:hover {
     width: 100%;
 }
 
-.sub-tab ul li {
+.sub-tab ul list {
     padding: 10px 30px;
     width: 100%;
     border-bottom: 5px solid #E4E7EB;

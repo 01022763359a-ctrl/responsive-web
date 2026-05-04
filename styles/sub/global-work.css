@@ -76,12 +76,38 @@
 }
 .global-list .btn{
     text-align: right;
+    margin: 0;
 }
-.global-list dd p{
-    font-size: 15px;
-    color: #555;
+.global-list .policy {
+    display: flex;
+    gap: 10px;
+    text-align: center;
+
+    
+
+}
+ .global-list .policy strong{
+    position: relative;
+    padding-right: 5px;
+    
+} 
+.global-list .policy strong::after {
+    content: "|";
+    position: absolute; right: -5px; top: 5px;
+    font-size: 10px;
+    color: #cccbcb;
+    flex-direction: column;  /* 세로로 정렬 */
     
 }
+.global-list p{
+    display: flex;
+    flex-direction: column;  /* 세로로 정렬 */
+    line-height: 27px;
+    vertical-align: middle;
+    text-align: left;
+    font-size: 15px;
+    color: #555;
+} 
 /*해외 일경험 add*/
 h3 {
     margin: 20px 0;

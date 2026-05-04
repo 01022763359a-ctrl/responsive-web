@@ -149,13 +149,57 @@ button:hover {
 .main-tab {}
 
 /* 서브 탭 - 지혜 */
+
+.sub-tab {
+    position: relative;
+    padding: 0 30px;  
+}
+
 .sub-tab ul { /* 태그명씀 */
+    display: flex;
+    overflow: hidden;
+}
+
+.sub-tab ul li {
+    position: relative;
+    flex-shrink: 0;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: 5px solid #E4E7EB;
+}
+
+.sub-tab ul li a { font-weight: 700; color:#666;}
+
+.sub-tab ul li:hover::after {
+  transform: scaleX(1); /* 호버 시 나타남 */
+}
+
+.sub-tab .on { border-bottom: 5px solid #003675; }
+.sub-tab .on a {color: #003675;}
+
+.sub-tab .prev {position: absolute; left: 0; top: 10px }
+.sub-tab .next {position: absolute; right: 0; top: 10px;}
+
+@media (min-width:360px){
+    .sub-tab ul li { width: 50% }
+}
+
+@media (min-width:650px){
+    .sub-tab ul li { width: 33.33% }
+}
+
+@media (min-width:1280px){
+    .sub-tab ul li { width: 25% }
+}
+
+/* .sub-tab ul { 
     display: flex;
     overflow: hidden;
     width: 100%;
 }
 
-.sub-tab ul list {
+.sub-tab ul li {
     padding: 10px 30px;
     width: 100%;
     border-bottom: 5px solid #E4E7EB;
@@ -177,7 +221,7 @@ button:hover {
 .sub-tab .prev {
     
 }
-.sub-tab .next {}
+.sub-tab .next {} */
 
 /* 꿀팁 (각 페이지 상단 정보) - 지혜 */
 .cont-info {

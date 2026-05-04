@@ -1,0 +1,25 @@
+
+
+/* 서브 탭 */
+.sub-tab  { /* 태그명씀 */
+    display: flex;
+    overflow: hidden;
+}
+
+.sub-tab a {
+   font-size: 17px;
+   font-weight: 700;
+   color: #003675;
+}
+
+.sub-tab li {
+    padding: 10px 30px;
+    width: 50%;
+    border-bottom: 5px solid #E4E7EB;
+    text-align: center;
+}
+
+.sub-tab .on {
+    border-bottom: 5px solid #003675;
+    color: #003675;
+}

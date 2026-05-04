@@ -25,15 +25,15 @@
     margin-bottom: 64px;
     border-radius: 10px;
     }
-    .cont-info img {
-    height: 80px;
-    width: 80px;
+    .cont-info dt {/*이미지 자리*/
+    padding-top: 80px;
     }
 }
 
 @media (min-width:650px){
     /*cont*/
 .cont-info dt{
+    padding-top: 0;/*이미지 자리(임시)*/
     font-size: 19px;
     margin-bottom: 12px;
 }

@@ -265,11 +265,24 @@ a:hover{
 
 /* 폼영역 - 지수 */
 .sub-search-area {
+    text-align: center;
     padding: 32px 24px;
     margin: 0 0 40px;
     border-radius: 15px;
     border: 1px solid #D9D9D9;
     background-color: #f8f8f8;
+}
+
+.sub-search-area ul {display: flex; align-items: center; gap: 6px;}
+.sub-search-area li {flex-shrink: 0;}
+.sub-search-area .input-box {flex: 1;}
+.sub-search-area .select{
+    width: 130px;
+    text-align: left;
+    padding: 4px 32px 4px 12px;
+    border: 1px solid #D0D5DD;
+    border-radius: 10px;
+    background-color: white;
 }
 
 .sub-search-area .keyword {
@@ -282,7 +295,6 @@ a:hover{
 }
 .sub-search-area input {
     height: 36px;
-    margin-top: 5px;
     border-radius: 8px;
     border: 1px solid #D9D9D9;
     background-color: white;

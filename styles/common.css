@@ -27,6 +27,8 @@ input:focus, button:focus {
     outline: none;
 }
 
+#aside { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0, 0, 0, 0); }
+
 /* common.css 에 추가해주세요 */
 /* reset */
 table { 
@@ -107,7 +109,7 @@ button {
 /* #main { padding: 0 15px; } */
 .wrapper { width: 100%; min-width: 320px; }
 .container { width: 100%; }
-.inner { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 15px; background-color: #fff; }
+.inner { width: 100%; min-width: 360px; max-width: 1200px; margin: 0 auto; padding: 0 15px; background-color: #fff; }
 
 /* 4. 공통 UI 컴포넌트 */
 .img-box { overflow: hidden; }
@@ -134,6 +136,7 @@ button {
 .sub-tab {
     position: relative;
     padding: 0 30px;  
+    margin-bottom: 32px;
 }
 
 .sub-tab ul { /* 태그명씀 */
@@ -208,7 +211,8 @@ a:hover{
         padding: 10px 20px;
         border-radius: 4px;
         font-size: 16px;
-        background-color: #007bff;
+        border-radius: 8px;
+        background-color: #003675;
         color: #fff;
     }
 
@@ -217,6 +221,7 @@ a:hover{
         width: 124px;
         height: 40px;
         padding: 8px 16px;
+        border-radius: 8px;
         background-color: #246BE0;
         color: #fff;
     }
@@ -230,6 +235,7 @@ a:hover{
         width: 100px;
         height: 40px;
         padding: 0px 8px;
+        border-radius: 8px;
         background-color: #EFF5FF;
         color: #246BE0;
         border: 1px solid #246BE0;
@@ -273,15 +279,18 @@ a:hover{
     background-color: #f8f8f8;
 }
 
-.sub-search-area ul {display: flex; align-items: center; gap: 6px;}
-.sub-search-area li {flex-shrink: 0;}
-.sub-search-area .input-box {flex: 1;}
+.sub-search-area ul {
+    display: flex; 
+    gap: 6px;
+}
+.sub-search-area li {flex-shrink: 0; text-align: left;}
+.sub-search-area .input-box {flex: 1; width: 100%;}
 .sub-search-area .select{
-    width: 130px;
+    width: 100%;
     text-align: left;
     padding: 4px 32px 4px 12px;
     border: 1px solid #D0D5DD;
-    border-radius: 10px;
+    border-radius: 8px;
     background-color: white;
 }
 
@@ -349,6 +358,7 @@ a:hover{
 /* 모바일~테블릿 */
 @media screen and (max-width: 650px){
     .blind-m { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0, 0, 0, 0); }
+    .sub-search-area ul { flex-direction: column; }
 }
 
 /* 테블릿~데스크탑 */
@@ -361,8 +371,16 @@ a:hover{
     .album-list {
         grid-template-columns: repeat(2, 1fr);
     }
-}
 
+    .sub-search-area ul {
+        align-items: center; 
+        justify-content: center; 
+    }
+    .sub-search-area .select{ width: 130px; }
+    .sub-search-area .input-box {flex: 1; max-width: 500px;}
+
+}
+/* 데스크탑 */
 @media screen and (min-width: 1280px){ /* 데스크탑 min-width가 다를 수 있음 */
     body { 
         font-size: 18px;
@@ -378,6 +396,8 @@ a:hover{
     /* 크기만 #aside가 잡고(inner와 같은 역할) 디자인은 안에 박스에서 */
     #aside {
         width: 292px;
+        position: static;
+        overflow: visible;
     }
 
     .aside-wrap {
@@ -388,7 +408,7 @@ a:hover{
     }
 
     #main {
-        padding: 0 20px;
+        padding-left: 40px;
         flex: 1;
     }
 

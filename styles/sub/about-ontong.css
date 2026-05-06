@@ -2,9 +2,9 @@
 /*모바일 ~ 테블릿*/
 @media (min-width:360px){
 
-.cont-info dt{
-    margin-bottom: 12px;
+.cont-info dt strong{
     font-size: 19px;
+    margin-bottom: 12px;
     
 }
     /*cont*/

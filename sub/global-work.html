@@ -11,7 +11,7 @@
 </head>
 <body>
 
-    <div class="container">
+    <div class="container inner">
         <aside id="aside">
             
         </aside><!-- // #aside End -->
@@ -40,27 +40,33 @@
 
             <h2 class="blind tit-md">해외 일경험</h2>
             <div class="sub-search-area">
-                <strong>카테고리</strong>
-                    <ul class="sub-search-category">
-                        <li>전체</li>
-                        <li>국제교류</li>
-                        <li>교육연수</li>
-                        <li>일경험</li>
-                        <li>국제기구</li>
-                        <li>국제개발협력</li>
-                    </ul>
-                <strong>키워드</strong>
-                    <ul class="sub-search-keyword">
-                        <li>전체</li>
-                        <li>제목</li>
-                        <li>내용</li>
-                    </ul>
-                    <input  class="sub-search-input" type="text" placeholder="검색어를 입력해주세요">
-
-                <p>
-                    <button class="search-reset">초기화</button>
-                    <button class="search-submit">검색</button>
-                </p>
+                <div class="keyword-area">
+                    <div class="category-box">
+                        <span><strong>카테고리</strong></span>
+                            <dl class="category">
+                                <dt>전체</dt>
+                                <dd>국제교류</dd>
+                                <dd>교육연수</dd>
+                                <dd>일경험</dd>
+                                <dd>국제기구</dd>
+                                <dd>국제개발협력</dd>
+                            </dl>
+                    </div>
+                    <div class="keyword-box">
+                        <span><strong>키워드</strong></span>
+                    
+                        <dl class="keyword">
+                            <dt>전체</dt>
+                            <dd>제목</dd>
+                            <dd>내용</dd>
+                        </dl>
+                        <input type="text" name="" id="" placeholder="검색어를 입력해주세요">
+                    </div>
+                    <p class="btn">
+                        <button class="reset">초기화</button>
+                        <button class="submit">검색</button>
+                    </p>
+                </div>
             </div>
 
             <div>

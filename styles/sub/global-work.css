@@ -22,6 +22,7 @@
     color: #003675;
 }
 
+
 /*국내 일경험 list*/
 .domestic-list {
     text-align: center;
@@ -46,6 +47,9 @@
 }
 
 /*해외 일경험 list*/
+.global-list-add  {
+    /* flex-flow: row wrap; */
+}
 .global-list dl {
     padding: 32px;
     border: 1px solid#D0D5DD;
@@ -82,23 +86,30 @@
     display: flex;
     gap: 10px;
     text-align: center;
-
-    
-
 }
+.global-list .policy span {
+    gap: 10px;
+    overflow: hidden;
+    line-clamp: 1;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+
  .global-list .policy strong{
     position: relative;
     padding-right: 5px;
+    white-space: nowrap;
     
 } 
-.global-list .policy strong::after {
+/* .global-list .policy strong::after {
     content: "|";
     position: absolute; right: -5px; top: 5px;
     font-size: 10px;
     color: #cccbcb;
-    flex-direction: column;  /* 세로로 정렬 */
+    flex-direction: column;   세로로 정렬 
     
-}
+} */
 .global-list p{
     display: flex;
     flex-direction: column;  /* 세로로 정렬 */
@@ -113,10 +124,11 @@ h3 {
     margin: 20px 0;
 }
 .global-list-add li {
-    padding: 15px;
+    padding: 20px;
     border: 1px solid#D0D5DD;
     border-radius: 10px;
-    margin-top: 20px;
+    margin: 8px 0;
+    
 }
 .global-list-add span{
     display: block;
@@ -133,5 +145,70 @@ h3 {
     font-size: 17px;
 }
 .global-list-add img{
+    width: 0; height: 0;
+}
 
+@media (min-width:360px){
+    /* 폼 영역 */
+    .sub-search-area dl {
+        width: 292px;
+        height: 36px;
+        border-radius: 8px;
+        padding: 4px 32px 4px 12px;
+        border-radius: 8px;
+        border: 1px solid #D9D9D9;
+        background-color: white;
+    }
+    .sub-search-area input {
+        height: 36px;
+        line-height: 36px;
+        padding: 4px 12px;
+        border-radius: 8px;
+        width: 292px;
+        height: 36px;
+        border-radius: 8px;
+    }
+}
+    
+
+@media (min-width:650px){
+    
+     .sub-search-area dl {
+        width: 129px;
+        height: 36px;
+        border-radius: 8px;
+        padding: 0 32px 0 12px;
+        margin: 0 5px;
+    }
+    .sub-search-area input {
+        width: 80%;
+        height: 36px;
+        border-radius: 8px;
+        margin: 0 5px;
+    }
+    .sub-search-area dt {
+        line-height: 36px;
+    }
+    .global-list-add  {
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     gap: 10px;
+    
+    }
+    .global-list-add li {
+        width: 100%;
+        
+    }
+    .keyword-box{ 
+        display: flex;
+    }
+    .category-box{
+        display: flex;
+        margin-bottom: 16px;
+    }
+
+}
+
+@media (min-width:1280px){
+   
 }

@@ -1,4 +1,4 @@
-
+#main { margin-bottom: 64px;}
 /*모바일 ~ 테블릿*/
 @media (min-width:360px){
 
@@ -52,7 +52,6 @@
 }
 .cont span{
     display: block;
-    white-space: nowrap;
     text-align: center;
 }
 

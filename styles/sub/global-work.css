@@ -1,13 +1,6 @@
 /* 서브 탭 */
-.sub-tab ul { /* 태그명씀 */
-    display: flex;
-    overflow: hidden;
-}
-
-.sub-tab a {
-   font-size: 17px;
-   font-weight: 700;
-   color: #003675;
+.sub-tab  {  
+    padding:0;
 }
 
 .sub-tab ul li {
@@ -17,60 +10,56 @@
     text-align: center;
 }
 
-.sub-tab .on {
-    border-bottom: 5px solid #003675;
-    color: #003675;
-}
-
-
 /*국내 일경험 list*/
 .domestic-list {
     text-align: center;
 }
-
-.domestic-list a {
-    font-size: 26px;
-    color: #111;
+.domestic-list p {
+    font-size: 16px;
+    word-break: keep-all;
 }
 
-.domestic-list li {
+
+.domestic-list a {
     display: flex;
     width: 245px;
     height: 76px;
-    font-size: 16px;
+    font-size: 26px;
+    font-weight: 700;
     border: 1px solid#D0D5DD;
     border-radius: 10px;
     align-items: center;
     justify-content: center;
-    margin: 10px auto;
-    margin-top: 30px;
+    margin:40px auto 10px auto;
+    /* margin-top: 30px; */
 }
 
-/*해외 일경험 list*/
-.global-list-add  {
-    /* flex-flow: row wrap; */
-}
-.global-list dl {
-    padding: 32px;
-    border: 1px solid#D0D5DD;
-    border-radius: 10px;
-    margin-top: 20px;
-}
+
+/*해외 일경험 global-list*/
 
 .global-list .tag {
     padding: 10px;
     background-color: #003675;
     color: #fff;
     border-radius: 10px;
-    
-}
-.global-list dt {
-    margin-top: 20px;
-    font-size: 19px;
 }
 
-.global-list dd {
+.global-list li {
+    padding: 20px;
+    border: 1px solid#D0D5DD;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.global-list .list-top dt {
+    margin-top: 20px;
+    font-size: 19px;
+    font-weight: 700;
+
+}
+.global-list .list-top dd {
     font-size: 17px;
+    font-weight: 400;
     margin: 8px 0 24px;
     overflow: hidden;   /* 지정된 줄 수를 넘는 텍스트 숨김 */
     line-clamp: 2;      /* (표준) 최대 2줄까지만 표시, 초과 내용은 잘림 + 말줄임 처리 */
@@ -78,7 +67,36 @@
     -webkit-box-orient: vertical;   /* 박스 방향을 세로로 설정 */
     -webkit-line-clamp: 2;   /* 웹킷 방식 줄 제한 */
 }
-.global-list .btn{
+
+
+
+.global-list .list-bottom{
+    display: flex;
+    margin-bottom: 30px;
+    line-height: 27px;
+    vertical-align: middle;
+    text-align: left;
+    font-size: 15px;
+    color: #555;
+} 
+.global-list .list-bottom dt{
+    position: relative;
+    padding-right: 8px;
+    white-space: nowrap;
+    font-weight: 700;
+    color: #333;
+}
+.global-list .list-bottom dd {
+    font-size: 15px;
+    overflow: hidden;
+    line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+
+.global-list .btn-wrap{
     text-align: right;
     margin: 0;
 }
@@ -87,21 +105,6 @@
     gap: 10px;
     text-align: center;
 }
-.global-list .policy span {
-    gap: 10px;
-    overflow: hidden;
-    line-clamp: 1;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 1;
-}
-
- .global-list .policy strong{
-    position: relative;
-    padding-right: 5px;
-    white-space: nowrap;
-    
-} 
 /* .global-list .policy strong::after {
     content: "|";
     position: absolute; right: -5px; top: 5px;
@@ -110,19 +113,19 @@
     flex-direction: column;   세로로 정렬 
     
 } */
-.global-list p{
-    display: flex;
-    flex-direction: column;  /* 세로로 정렬 */
-    line-height: 27px;
-    vertical-align: middle;
-    text-align: left;
-    font-size: 15px;
-    color: #555;
-} 
+
 /*해외 일경험 add*/
 h3 {
-    margin: 20px 0;
+    font-size: 18px;
+    margin: 64px 0 20px;
 }
+
+.global-list-add  {
+    gap: 10px;
+    margin-bottom: 64px;
+
+}
+
 .global-list-add li {
     padding: 20px;
     border: 1px solid#D0D5DD;
@@ -132,7 +135,7 @@ h3 {
 }
 .global-list-add span{
     display: block;
-    font-size: 17px;
+    font-size: 15px;
 }
 
 .global-list-add strong{
@@ -149,66 +152,82 @@ h3 {
 }
 
 @media (min-width:360px){
-    /* 폼 영역 */
-    .sub-search-area dl {
-        width: 292px;
-        height: 36px;
-        border-radius: 8px;
-        padding: 4px 32px 4px 12px;
-        border-radius: 8px;
-        border: 1px solid #D9D9D9;
-        background-color: white;
-    }
-    .sub-search-area input {
-        height: 36px;
-        line-height: 36px;
-        padding: 4px 12px;
-        border-radius: 8px;
-        width: 292px;
-        height: 36px;
-        border-radius: 8px;
-    }
+
+    
 }
     
 
 @media (min-width:650px){
+
+
+    .domestic-list {
+        margin: 0 15px 72px;
+    }
+
+    .domestic-list li{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        margin: 40px auto;
+
+    }
+    .domestic-list p{
+        text-align: left;
+    }
+    .domestic-list a{
+        width: 40%;
+        height: 90px;
+        padding: 20px;
+        margin: 0;
+    }
     
-     .sub-search-area dl {
-        width: 129px;
-        height: 36px;
-        border-radius: 8px;
-        padding: 0 32px 0 12px;
-        margin: 0 5px;
-    }
-    .sub-search-area input {
-        width: 80%;
-        height: 36px;
-        border-radius: 8px;
-        margin: 0 5px;
-    }
-    .sub-search-area dt {
-        line-height: 36px;
-    }
     .global-list-add  {
      display: grid;
      grid-template-columns: repeat(2, 1fr);
-     gap: 10px;
-    
     }
     .global-list-add li {
         width: 100%;
+        margin: 10px;
+        padding: 20px;
         
     }
-    .keyword-box{ 
+
+    .global-list-add p {
+        margin: 20px 0;
+        overflow: hidden;
+        line-clamp: 3;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+    }
+    /* .keyword-box{ 
         display: flex;
     }
     .category-box{
         display: flex;
         margin-bottom: 16px;
-    }
+    } */
+
+   
 
 }
 
 @media (min-width:1280px){
-   
+   .domestic-list {
+    margin: 40px 57px;
+    }
+    
+    .domestic-list li {
+    margin-top: 40px;
+    }
+
+    .global-list-add  {
+     display: flex;
+    }
+
+    .global-list-add li {
+        width: 100%;
+        
+    }
+
 }

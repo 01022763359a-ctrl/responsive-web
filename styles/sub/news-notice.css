@@ -29,8 +29,9 @@ table .table {
 }
 table tr {
     border-top: 1px solid #F0F0F0;
-    padding: 0 10px;
+    padding: 10px;
 }
+
 
 table th{
     display: none;
@@ -84,6 +85,9 @@ table td a{
         margin-bottom: 12px;
         font-size: 19px;
         
+    }
+    .icon-m {
+        display: none;
     }
 
 }

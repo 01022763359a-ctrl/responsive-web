@@ -1,0 +1,61 @@
+@font-face { 
+   font-family: 'S-CoreDream'; 
+   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Regular.woff') format('woff'); 
+   font-weight: 400; 
+   font-style: normal; 
+}
+
+* { font-family: 'Escoredream'; }
+
+/*.sns-area */
+.sns-area {
+    padding: 40px 0;
+}
+
+.sns-area .list-area li {
+    margin-bottom: 30px;
+}
+.sns-area img {
+    min-width: 100%;
+    min-height: 100%;
+    max-width: 100%;
+    margin-bottom: 12px;
+    border-radius: 16px;
+}
+h2 {
+    position: relative;
+    margin: 0 0 32px; 
+}
+
+.sns-area h2 span{
+    font-weight: 400;
+}
+/* .sns-area .more  {
+    position: absolute; right: 10px; top: 45px;
+    width: 20px; height: 20px;
+    text-align: center;
+} */
+.sns-area p {
+    text-align: left;
+    font-size: 17px;
+}
+.sns-area .youtube-area {
+    margin-bottom: 60px;
+}
+.youtube-area h2 {
+    /* position: relative; */
+}
+.youtube-area .more  {
+    position: absolute; right: 10px; top: 45px;
+    width: 20px; height: 20px;
+    text-align: center;
+}
+
+.insta-area h2 {
+    /* position: relative; */
+}
+.insta-area .more  {
+    position: absolute; 
+    margin-right: 0 auto;
+    text-align: center;
+}

@@ -9,7 +9,10 @@
 
 /*.sns-area */
 .sns-area {
-    padding: 40px 0;
+    /* align-items: flex-start; */
+    /* padding: 40px 0; */
+    
+    
 }
 
 .sns-area .list-area li {
@@ -35,9 +38,7 @@ h2 span{
     text-align: left;
     font-size: 17px;
 }
-.sns-area .youtube-area {
-    margin-bottom: 60px;
-}
+
 
 
 
@@ -49,15 +50,7 @@ h2 span{
 }
 
 
-
-
-/* 모바일~테블릿 */
-@media screen and (max-width: 1280px){
-/* .insta-area ul {
-    display: flex;
-} */
-}
-
+/*cont-area */
 .cont-area {
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -71,19 +64,109 @@ h2 span{
     border-radius: 10px;
     border: 1px solid#D0D5DD;
     text-align: center;
+    padding: 20px 10px;
 }
 .cont-icon { /*아이콘 여백*/
-    width: 100%;
-    padding: 20px 10px;
-    border-radius: 20px;
+    gap: 16px;
+    
 }
+
 .cont dl{
-    padding: 20px 10px;
+    /* padding: 20px 10px; */
 }
 .cont dt{
-    font-size: 17px;
+    font-size: 20px;
+    font-weight: 500;
     margin: 1px;
+
 }
 .cont dd{
-    font-size: 14px;
+    font-size: 16px;
+}
+
+/* 모바일~테블릿 */
+@media screen and (min-width: 360px){
+    .youtube-area {
+        margin-bottom: 60px;
+    }
+    .cont dt{
+    font-size: 17px;
+    }
+    .cont dd{
+        font-size: 14px;
+    }
+}
+/* 모바일~테블릿 */
+@media screen and (min-width: 650px){
+    h2 { font-size: 30px;}
+    .list-area {
+        display: grid;
+        grid-template-columns: repeat(2,1fr); 
+        gap: 25px;
+    }
+    .sns-area {
+        /* margin-bottom: 60px; */
+    }
+
+    .cont dt{
+    font-size: 20px;
+    }
+    .cont dd{
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 1280px){
+    /*sns-area*/
+    .sns-area { 
+        display: flex;
+        justify-content: space-between;
+        width: 158rem;
+        max-width: 100%;
+        
+    
+    }
+    .list-area li{
+        /* flex:1; */
+        height: 300px;
+    }
+
+    .youtube-area { width: calc(100% - 34.68% - 80px); }  
+    .youtube-area .img-mask {
+        aspect-ratio: 367 / 206;
+        position: relative;
+    }
+    .insta-area { width: 34.68% }
+    .insta-area .img-mask {
+        aspect-ratio: 1 / 1;
+        position: relative;
+    }
+
+    .img-mask img {
+        position: absolute; top: 0; left: 0;
+        
+        width: 100%;
+        height: 100%;
+
+    }
+    p {white-space: nowrap;}
+
+
+    /*cont-area*/
+    .container {display: block;}
+    .cont-area{  
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 20px;
+    }
+    .cont { 
+        display: flex;
+        padding: 10px 10px 10px 28px;
+        gap: 16px;
+    }
+    .cont-icon { }
+    .cont dl {
+        
+        text-align: left;
+    }
 }

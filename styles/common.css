@@ -484,5 +484,6 @@ a:hover{
 
     .album-list {
         grid-template-columns: repeat(3, 1fr);
+
     }
 }

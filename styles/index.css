@@ -9,7 +9,7 @@
 
 /*.sns-area */
 .sns-area {
-    /* align-items: flex-start; */
+    align-items: flex-start;
     /* padding: 40px 0; */
     
     
@@ -127,11 +127,15 @@ h2 span{
     
     }
     .list-area li{
-        /* flex:1; */
+        flex:1;
         height: 300px;
     }
 
-    .youtube-area { width: calc(100% - 34.68% - 80px); }  
+    .youtube-area { 
+        width: calc(100% - 34.68% - 80px); 
+        margin: 0;
+    
+    }  
     .youtube-area .img-mask {
         aspect-ratio: 367 / 206;
         position: relative;
@@ -142,14 +146,11 @@ h2 span{
         position: relative;
     }
 
-    .img-mask img {
+    /* .img-mask img {
         position: absolute; top: 0; left: 0;
-        
         width: 100%;
         height: 100%;
-
-    }
-    p {white-space: nowrap;}
+    } *
 
 
     /*cont-area*/

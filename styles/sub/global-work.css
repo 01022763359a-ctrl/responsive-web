@@ -13,12 +13,12 @@
 /*국내 일경험 list*/
 .domestic-list {
     text-align: center;
+    margin-bottom: 72px;
 }
 .domestic-list p {
     font-size: 16px;
     word-break: keep-all;
 }
-
 
 .domestic-list a {
     display: flex;
@@ -31,8 +31,21 @@
     align-items: center;
     justify-content: center;
     margin:40px auto 10px auto;
-    /* margin-top: 30px; */
+    padding: 20px;
 }
+
+.domestic-list img{
+    width: auto;
+    height: auto;
+    object-fit: cover;
+}
+.domestic-list span {
+    font-weight: 900;
+    color: #163eca;
+}
+
+
+
 
 
 /*해외 일경험 global-list*/

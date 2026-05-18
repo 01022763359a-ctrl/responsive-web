@@ -58,7 +58,7 @@ h2 span{
     margin: 40px 0;
 }
 
-.cont{
+.cont-area .cont{
     height: auto;
     background-color: #EFF5FF;
     border-radius: 10px;
@@ -66,21 +66,32 @@ h2 span{
     text-align: center;
     padding: 20px 10px;
 }
-.cont-icon { /*아이콘 여백*/
+.cont-area .cont-icon { /*아이콘 여백*/
     gap: 16px;
-    
+    width: 67px;
+    height: 67px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cont-area .cont-icon img {
+    width: auto;
+    height: auto;
+    object-fit: cover;
 }
 
-.cont dl{
-    /* padding: 20px 10px; */
+.cont-area .cont dl{
+    padding: 10px ;
+    margin: auto;
 }
-.cont dt{
+.cont-area .cont dt{
     font-size: 20px;
     font-weight: 500;
     margin: 1px;
 
 }
-.cont dd{
+.cont-area .cont dd{
     font-size: 16px;
 }
 
@@ -89,10 +100,10 @@ h2 span{
     .youtube-area {
         margin-bottom: 60px;
     }
-    .cont dt{
+    .cont-area .cont dt{
     font-size: 17px;
     }
-    .cont dd{
+    .cont-area .cont dd{
         font-size: 14px;
     }
 }
@@ -108,10 +119,10 @@ h2 span{
         /* margin-bottom: 60px; */
     }
 
-    .cont dt{
+    .cont-area.cont dt{
     font-size: 20px;
     }
-    .cont dd{
+    .cont-area .cont dd{
         font-size: 16px;
     }
 }
@@ -160,13 +171,13 @@ h2 span{
         grid-template-columns: repeat(4,1fr);
         gap: 20px;
     }
-    .cont { 
+    .cont-area .cont { 
         display: flex;
         padding: 10px 10px 10px 28px;
         gap: 16px;
     }
-    .cont-icon { }
-    .cont dl {
+    
+    .cont-area .cont dl {
         
         text-align: left;
     }
